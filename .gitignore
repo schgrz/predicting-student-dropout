@@ -11,6 +11,3 @@ wheels/
 
 # Code Workspace
 *.code-Workspace
-
-# NOTEBOOK FOR NOW
-*.ipynb
