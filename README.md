@@ -1,4 +1,4 @@
-# OPIM 5604 - Predictive Analytics - Final Project: Predicting Student Dropout
+# OPIM 5604 - Predictive Modeling - Final Project: Predicting Student Dropout
 
 *An .html version of this notebook is included if you do not wish to run the analysis on your machine.*
 
