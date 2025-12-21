@@ -42,6 +42,7 @@ Source: UC Irvine Machine Learning Repository | [Predicting Student Dropout](htt
     - Dataset contains 18 categorical variables, many with 15 or more sub-categories
     - Sub-categories with similar distributions relative to the response varaible were combined to reduce dimensionality
 - Performed outlier detection and handling using IQR method to remove the top 1st quantile and the 99th quantile as to remove only extreme values. Some observations were realistic enough to expect
+- Future consideration for this project would include more interaction terms. While we combine sub-categories to similar distributions relative to their response, there may be interactions we lose such as certain majors along with financial factors or certain majors where their parents jobs are either similar or different
 
 ### 2. Modeling / Evaluation
 
