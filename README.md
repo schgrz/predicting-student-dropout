@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This was a comprehensive work integrates the material learned in OPIM 5604 at the University of Commecticut (Predictive Analytics). The purpose of this project was to showcase my ability to execute the full predictive analytics process, including data transformation, exploratory analysis, and the application of machine learning algorithms in Python. The project highlights my analytical reasoning, statistical understanding, and proficiency in developing and evaluating predictive models. We had autonomy to discover a business problem, research a dataset, and propose actionable solutions from our findings.
+This was a comprehensive work integrates the material learned in OPIM 5604 at the University of Connecticut (Predictive Analytics). The purpose of this project was to showcase my ability to execute the full predictive analytics process, including data transformation, exploratory analysis, and the application of machine learning algorithms in Python. The project highlights my analytical reasoning, statistical understanding, and proficiency in developing and evaluating predictive models. We had autonomy to discover a business problem, research a dataset, and propose actionable solutions from our findings.
 
 The project focuses on predicting student dropout risk using demographic, academic, and socioeconomic variables. The goal is to create a model that identifies at-risk students for institutional intervention and to understand which factors most influence dropout risk. This analysis includes:
 
@@ -32,15 +32,15 @@ Source: UC Irvine Machine Learning Repository | [Predicting Student Dropout](htt
 ### 1. Data loading, preprocessing, EDA
 
 - Converted numeric codes in categorical variables into descriptive categories for readability
-    - Example: Marital Status coded as 1-6 was transformed into signle, married, widower, divorced, facto union, or legally separated
+    - Example: Marital Status coded as 1-6 was transformed into single, married, widower, divorced, facto union, or legally separated
 - Conducted exploratory data analysis (EDA) to:
     - Identify nationalities that the students are representative of
     - Understand continuous variable distribution
     - Explore variable correlations
-    - Get an idea of hour our continuous variables relates to our target variable
+    - Get an idea of our continuous variables relates to our target variable
 - Performed additional pre-processing for dimensionality reduction
     - Dataset contains 18 categorical variables, many with 15 or more sub-categories
-    - Sub-categories with similar distributions relative to the response varaible were combined to reduce dimensionality
+    - Sub-categories with similar distributions relative to the response variable were combined to reduce dimensionality
 - Performed outlier detection and handling using IQR method to remove the top 1st quantile and the 99th quantile as to remove only extreme values. Some observations were realistic enough to expect
 - Future consideration for this project would include more interaction terms. While we combine sub-categories to similar distributions relative to their response, there may be interactions we lose such as certain majors along with financial factors or certain majors where their parents jobs are either similar or different
 
@@ -76,7 +76,7 @@ With both of these in mind, the best model was the Naive Bayes model with Recall
 ### Conclusions and Recommendations
 This project creates a model that could be used to mark students as being a dropout risk or not using socioeconomic, academic, and demographic features. *(For more information on all features that were available, please refer to the documentation on the dataset source reference.)* Through the modeling, certain features were identified as being commonly important in usefulness to predict whether a student was identified as a dropout or non-dropout. These included whether a student had their tuition fees up to date, curricular units that a student was either approved for, graded for, or evaluated for during their first and second semesters, admission grades, previous qualification grades, or their age at enrollment. 
 
-For tuition fees we see that of the students whose tuition fees were not up to date, 87% of them dropped out compared to 25% who did have their tuition fees up to date. This signifies that students who do not make payments or are struggling to make payments likely feel pressure from economic conditions and are likely to drop out due to inability to pay or potentially from laziness. Institutions may be able to implement payment plans, tuition assistance programs for students who are falling behind on payments, coaching for students who are struggling to stay on track, or simply to research other reasons for non-payment. 
+For tuition fees we see that of the students whose tuition fees were not up to date, 87% of them dropped out compared to 25% who did have their tuition fees up to date. This signifies that students who do not make payments or are struggling to make payments likely feel pressure from economic conditions and are likely to drop out. Potential ideas could be due to inability to pay or laziness. Institutions may be able to implement payment plans, tuition assistance programs for students who are falling behind on payments, coaching for students who are struggling to stay on track, or simply to research other reasons for non-payment. 
 
 For Curricular Units, this signifies students that are struggling academically. Instituations may be able to implement student support or tutoring assistance for students who are struggling to pass classes as a way to offer extra help. Students who are approved for 3 or less total credits are significantly more likely to drop out than students who are approved for 4 or more. There is a sweet spot in this datapoint between 6 - 8 credits where the dropout rate is below 10%.
 
