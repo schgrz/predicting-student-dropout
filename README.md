@@ -121,7 +121,7 @@ An .html version of this notebook is included if you do not wish to run the anal
    ```
 5. **Verify folder structure**
    ```
-   LinkedIn Sales Navigator (Working Directory)
+   predictting-student-dropout (Working Directory)
    ├── data/                     # contains raw and processed datasets
    └── OPIM 5604 - Final Notebook.ipynb
    ```
